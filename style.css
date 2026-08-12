@@ -2881,3 +2881,1176 @@ iframe {
         transform: none;
     }
 }
+
+
+
+/* =========================================================
+   FINAL MOBILE PREMIUM FIX
+   PASTE THIS AT THE VERY END OF style.css
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL MOBILE FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 100%;
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        min-height: 70px;
+    }
+
+    .header .container {
+
+        width: 94%;
+
+        min-height: 70px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+        padding: 8px 0;
+
+        gap: 4px;
+    }
+
+    .logo {
+        font-size: 24px;
+        flex-shrink: 0;
+    }
+
+    nav {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-links {
+
+        width: 100%;
+
+        display: flex !important;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        gap: 22px;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        white-space: nowrap;
+
+        padding: 6px 2px 9px;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links li {
+        flex: 0 0 auto;
+    }
+
+    .nav-links a {
+
+        display: block;
+
+        font-size: 12px;
+
+        padding: 4px 0;
+
+        white-space: nowrap;
+    }
+
+    .resume-btn {
+        display: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE HERO
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        width: 100%;
+
+        padding: 145px 0 65px;
+
+        overflow: hidden;
+    }
+
+    .hero-container {
+
+        width: 92%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 38px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+
+        width: 100%;
+
+        max-width: 600px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        animation: none;
+    }
+
+    .hero-badge {
+
+        font-size: 11px;
+
+        padding: 8px 13px;
+
+        margin-bottom: 18px;
+
+        white-space: nowrap;
+    }
+
+    .hero h1 {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        font-size: clamp(34px, 10vw, 46px);
+
+        line-height: 1.08;
+
+        letter-spacing: -1.5px;
+
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        display: inline;
+    }
+
+    .hero-description {
+
+        width: 100%;
+
+        max-width: 520px;
+
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        margin-bottom: 27px;
+    }
+
+    .hero-buttons {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        justify-content: center;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+        min-height: 48px;
+
+        padding: 12px 10px;
+
+        font-size: 13px;
+
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE DEVELOPER CARD
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero-image {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin: 0;
+
+        animation: none;
+    }
+
+    .developer-card {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        border-radius: 18px;
+
+        animation: floatCard 6s ease-in-out infinite;
+
+        transform: none !important;
+    }
+
+    .card-top {
+
+        padding: 13px 17px;
+
+        gap: 7px;
+    }
+
+    .card-top span {
+
+        width: 9px;
+
+        height: 9px;
+    }
+
+    .card-content {
+
+        padding: 23px 18px 20px;
+    }
+
+    .card-content small {
+
+        font-size: 9px;
+
+        letter-spacing: .8px;
+
+        margin-bottom: 8px;
+    }
+
+    .card-content h3 {
+
+        font-size: 21px;
+
+        line-height: 1.25;
+
+        margin-bottom: 18px;
+    }
+
+    /* TECHNOLOGIES */
+
+    .tech-list {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 7px;
+
+        margin-bottom: 18px;
+
+        justify-content: center;
+    }
+
+    .tech-list span {
+
+        width: 100%;
+
+        min-width: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 7px 4px;
+
+        font-size: 9px;
+
+        line-height: 1.2;
+
+        white-space: nowrap;
+
+        border-radius: 8px;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+    .status {
+
+        width: 100%;
+
+        min-height: 48px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        margin-top: 14px;
+
+        padding: 10px;
+
+        font-size: 10px;
+
+        line-height: 1.4;
+
+        text-align: center;
+
+        border-radius: 11px;
+    }
+
+    .dot {
+
+        width: 9px;
+
+        height: 9px;
+
+        flex: 0 0 9px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE SECTIONS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+
+        padding: 70px 0;
+    }
+
+    .section-title {
+
+        width: 100%;
+
+        margin-bottom: 38px;
+
+        padding: 0 4px;
+    }
+
+    .section-title h2 {
+
+        font-size: clamp(27px, 7vw, 34px);
+
+        line-height: 1.2;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 12px;
+    }
+
+    .section-title p {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================================
+   ABOUT MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-grid {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .about-content {
+
+        width: 100%;
+    }
+
+    .about-content h3 {
+
+        font-size: 23px;
+
+        margin-bottom: 12px;
+    }
+
+    .about-content p {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        margin-bottom: 14px;
+    }
+
+    /* FEATURES TWO COLUMNS */
+
+    .about-features {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+    .feature-card {
+
+        min-width: 0;
+
+        padding: 17px 13px;
+
+        border-radius: 13px;
+    }
+
+    .feature-icon {
+
+        font-size: 22px;
+
+        margin-bottom: 8px;
+    }
+
+    .feature-card h4 {
+
+        font-size: 14px;
+
+        line-height: 1.3;
+
+        margin-bottom: 6px;
+    }
+
+    .feature-card p {
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+   STATS MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stats {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+    .stat-card {
+
+        min-width: 0;
+
+        padding: 20px 10px;
+
+        border-radius: 13px;
+    }
+
+    .stat-card h3 {
+
+        font-size: 25px;
+
+        line-height: 1.2;
+    }
+
+    .stat-card span {
+
+        font-size: 10px;
+
+        line-height: 1.4;
+    }
+
+}
+
+
+/* =========================================================
+   SKILLS MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .skills-grid {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+    .skill-card {
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 58px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 13px 8px;
+
+        font-size: 12px;
+
+        line-height: 1.3;
+
+        border-radius: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   PROJECTS — TWO CARDS PER ROW ON MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 13px;
+    }
+
+    .project-card {
+
+        width: 100%;
+
+        min-width: 0;
+
+        border-radius: 14px;
+
+        overflow: hidden;
+    }
+
+    /* PROJECT IMAGE */
+
+    .project-card img {
+
+        width: 100%;
+
+        height: 135px;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+    /* PROJECT CONTENT */
+
+    .project-content {
+
+        padding: 14px 12px 13px;
+    }
+
+    .project-card-content {
+
+        padding: 14px 12px 13px;
+    }
+
+    .project-content h3,
+    .project-card h3 {
+
+        font-size: 16px;
+
+        line-height: 1.25;
+
+        margin-bottom: 7px;
+
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+
+        
+
+        overflow: hidden;
+    }
+
+    /* DESCRIPTION — ONLY 2 LINES */
+
+    .project-content p,
+    .project-card p {
+
+        font-size: 10px;
+
+        line-height: 1.55;
+
+        margin-bottom: 10px;
+
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+    /* TECHNOLOGIES */
+
+    .project-technologies,
+    .tech-stack {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 5px;
+
+        margin-top: 8px;
+
+        margin-bottom: 10px;
+
+        overflow: hidden;
+    }
+
+    .tech-tag,
+    .tech {
+
+        max-width: 100%;
+
+        padding: 5px 7px;
+
+        font-size: 8px;
+
+        line-height: 1.2;
+
+        border-radius: 6px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+    /* PROJECT BUTTONS */
+
+    .project-links {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5px;
+
+        margin-top: 8px;
+    }
+
+    .project-links a {
+
+        width: 100%;
+
+        min-width: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 8px 4px;
+
+        font-size: 9px;
+
+        line-height: 1.2;
+
+        text-align: center;
+
+        border-radius: 7px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+/* =========================================================
+   CONTACT MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-box {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        padding: 20px 15px;
+
+        border-radius: 16px;
+    }
+
+    .contact-box a {
+
+        min-width: 0;
+
+        min-height: 52px;
+
+        padding: 12px 7px;
+
+        font-size: 11px;
+
+        line-height: 1.3;
+
+        text-align: center;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+@media (max-width: 768px) {
+
+    footer {
+
+        padding: 23px 12px;
+    }
+
+    footer p {
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .back-top {
+
+        width: 42px;
+
+        height: 42px;
+
+        right: 13px;
+
+        bottom: 13px;
+
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 93%;
+    }
+
+    .hero {
+        padding-top: 145px;
+        padding-bottom: 55px;
+    }
+
+    .hero-container {
+        gap: 32px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-description {
+        font-size: 12.5px;
+    }
+
+    .hero-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        font-size: 12px;
+        min-height: 46px;
+    }
+
+    .developer-card {
+        border-radius: 16px;
+    }
+
+    .card-content {
+        padding: 20px 14px;
+    }
+
+    .card-content h3 {
+        font-size: 19px;
+    }
+
+    .tech-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .tech-list span {
+        font-size: 8px;
+        padding: 7px 2px;
+    }
+
+    .status {
+        font-size: 9px;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .project-card {
+        border-radius: 12px;
+    }
+
+    .project-card img {
+        height: 115px;
+    }
+
+    .project-content,
+    .project-card-content {
+        padding: 11px 9px;
+    }
+
+    .project-content h3,
+    .project-card h3 {
+        font-size: 14px;
+    }
+
+    .project-technologies,
+    .tech-stack {
+        gap: 4px;
+    }
+
+    .tech-tag,
+    .tech {
+        font-size: 7px;
+        padding: 4px 5px;
+    }
+
+    .project-links {
+        gap: 4px;
+    }
+
+    .project-links a {
+        font-size: 8px;
+        padding: 7px 3px;
+    }
+
+    /* FEATURES */
+
+    .about-features {
+        gap: 8px;
+    }
+
+    .feature-card {
+        padding: 14px 10px;
+    }
+
+    .feature-card h4 {
+        font-size: 12px;
+    }
+
+    .feature-card p {
+        font-size: 9px;
+    }
+
+    /* CONTACT */
+
+    .contact-box {
+        gap: 8px;
+        padding: 16px 10px;
+    }
+
+    .contact-box a {
+        font-size: 9px;
+        min-height: 46px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .hero {
+        padding-top: 142px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 11.5px;
+    }
+
+    .developer-card {
+        padding: 0;
+    }
+
+    .card-content {
+        padding: 18px 11px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+
+    .tech-list {
+        gap: 5px;
+    }
+
+    .tech-list span {
+        font-size: 7px;
+        padding: 6px 1px;
+    }
+
+    .status {
+        font-size: 8px;
+    }
+
+    .projects-grid {
+        gap: 7px;
+    }
+
+    .project-card img {
+        height: 105px;
+    }
+
+    .project-content,
+    .project-card-content {
+        padding: 9px 7px;
+    }
+
+    .project-content h3,
+    .project-card h3 {
+        font-size: 12px;
+    }
+
+    .project-content p,
+    .project-card p {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+
+    .tech-tag,
+    .tech {
+        font-size: 6.5px;
+        padding: 4px;
+    }
+
+    .project-links a {
+        font-size: 7px;
+        padding: 6px 2px;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICE OPTIMIZATION
+========================================================= */
+
+@media (hover: none) {
+
+    .project-card:hover,
+    .skill-card:hover,
+    .stat-card:hover,
+    .feature-card:hover {
+        transform: none !important;
+    }
+
+    .project-card:hover img {
+        transform: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   PREVENT LONG TEXT FROM BREAKING MOBILE LAYOUT
+========================================================= */
+
+.project-card,
+.project-content,
+.project-card-content,
+.tech-tag,
+.tech,
+.tech-list span,
+.contact-box a,
+.skill-card {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION RESET SUPPORT
+========================================================= */
+
+.reveal {
+    will-change: transform, opacity;
+}
+
+@media (max-width: 768px) {
+
+    .reveal {
+        transform: translateY(35px);
+    }
+
+}
