@@ -4054,3 +4054,859 @@ iframe {
     }
 
 }
+
+
+/* =========================================================
+   FINAL MOBILE + PROJECT CARD POLISH
+   PASTE THIS AT THE VERY END OF style.css
+========================================================= */
+
+
+/* =========================================================
+   1. MOBILE NAVBAR
+   Arish. + Navigation SAME ROW
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+    }
+
+    .header .container {
+
+        width: 94%;
+        min-height: 64px;
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 12px;
+
+        padding: 8px 0;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+
+        flex-shrink: 0;
+
+        font-size: 23px;
+        line-height: 1;
+
+        white-space: nowrap;
+    }
+
+
+    /* NAVIGATION */
+
+    nav {
+
+        width: auto;
+        flex: 1;
+
+        min-width: 0;
+
+        order: initial;
+    }
+
+
+    .nav-links {
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        gap: 15px;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+
+        padding: 4px 2px;
+
+        scrollbar-width: none;
+    }
+
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .nav-links li {
+        flex-shrink: 0;
+    }
+
+
+    .nav-links a {
+
+        font-size: 12px;
+
+        font-weight: 600;
+
+        white-space: nowrap;
+
+        padding: 3px 0;
+    }
+
+
+    /* Hide Resume on mobile */
+
+    .resume-btn {
+        display: none;
+    }
+
+
+    /* =====================================================
+       HERO
+       Keep enough space below fixed navbar
+    ===================================================== */
+
+    .hero {
+
+        padding-top: 105px;
+        padding-bottom: 70px;
+    }
+
+
+    .hero-container {
+
+        gap: 38px;
+    }
+
+
+    .hero h1 {
+
+        font-size: clamp(34px, 10vw, 46px);
+
+        line-height: 1.08;
+
+        margin-bottom: 18px;
+    }
+
+
+    .hero-description {
+
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        margin-bottom: 27px;
+    }
+
+
+    .hero-buttons {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+
+        min-height: 48px;
+
+        padding: 0 20px;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        white-space: nowrap;
+    }
+
+
+    /* Developer Card */
+
+    .developer-card {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        border-radius: 18px;
+    }
+
+
+    .card-content {
+
+        padding: 25px 20px;
+    }
+
+
+    .card-content h3 {
+
+        font-size: 22px;
+
+        line-height: 1.3;
+    }
+
+
+    .tech-list {
+
+        justify-content: center;
+
+        gap: 7px;
+    }
+
+
+    .tech-list span {
+
+        font-size: 10px;
+
+        padding: 7px 9px;
+    }
+
+
+    .status {
+
+        font-size: 11px;
+
+        line-height: 1.4;
+
+        padding: 14px 12px;
+    }
+}
+
+
+/* =========================================================
+   2. PROJECT DESCRIPTION
+   Show ONLY beginning of description
+========================================================= */
+
+
+/* Desktop */
+
+.project-content p,
+.project-card p {
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    line-height: 1.7;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .project-content p,
+    .project-card p {
+
+        -webkit-line-clamp: 2;
+
+        line-clamp: 2;
+
+        overflow: hidden;
+
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+
+        text-overflow: ellipsis;
+
+        max-height: 3.4em;
+
+        margin-bottom: 16px;
+    }
+}
+
+
+/* =========================================================
+   3. PROJECT BUTTONS
+   LIVE PREVIEW + GITHUB EXACT SAME SIZE
+========================================================= */
+
+.project-links {
+
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 12px;
+
+    width: 100%;
+}
+
+
+.project-links a {
+
+    flex: 1 1 0;
+
+    min-width: 0;
+
+    min-height: 46px;
+
+    padding: 11px 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    line-height: 1.2;
+
+    box-sizing: border-box;
+}
+
+
+/* Prevent different text lengths from changing button size */
+
+.project-links a:first-child,
+.project-links a:last-child {
+
+    flex: 1 1 0;
+
+    width: 50%;
+}
+
+
+/* =========================================================
+   4. PROJECT CARD MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+    }
+
+
+    .project-card {
+
+        width: 100%;
+
+        min-width: 0;
+
+        border-radius: 16px;
+    }
+
+
+    .project-card img {
+
+        width: 100%;
+
+        height: 165px;
+
+        object-fit: cover;
+    }
+
+
+    .project-content {
+
+        padding: 17px;
+    }
+
+
+    .project-content h3,
+    .project-card h3 {
+
+        font-size: 18px;
+
+        line-height: 1.3;
+
+        margin-bottom: 10px;
+
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+
+        -webkit-line-clamp: 1;
+
+        overflow: hidden;
+    }
+
+
+    .project-content p,
+    .project-card p {
+
+        font-size: 12px;
+
+        line-height: 1.65;
+
+        margin-bottom: 14px;
+    }
+
+
+    /* Technologies */
+
+    .project-technologies,
+    .tech-stack {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        gap: 6px;
+
+        margin-top: 12px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .tech-tag,
+    .tech {
+
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 5px 8px;
+
+        font-size: 10px;
+
+        line-height: 1.2;
+
+        white-space: nowrap;
+
+        max-width: 100%;
+    }
+
+
+    /* Buttons */
+
+    .project-links {
+
+        display: flex;
+
+        flex-direction: row;
+
+        gap: 7px;
+
+        width: 100%;
+    }
+
+
+    .project-links a {
+
+        width: 50%;
+
+        min-width: 0;
+
+        min-height: 42px;
+
+        padding: 8px 5px;
+
+        font-size: 10px;
+
+        flex: 1 1 0;
+
+        border-radius: 8px;
+    }
+}
+
+
+/* =========================================================
+   5. SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .header .container {
+
+        width: 95%;
+
+        gap: 9px;
+
+        min-height: 60px;
+    }
+
+
+    .logo {
+
+        font-size: 21px;
+    }
+
+
+    .nav-links {
+
+        gap: 13px;
+
+        justify-content: flex-start;
+    }
+
+
+    .nav-links a {
+
+        font-size: 10px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        padding-top: 95px;
+
+        padding-bottom: 60px;
+    }
+
+
+    .hero h1 {
+
+        font-size: clamp(32px, 10.5vw, 42px);
+
+        letter-spacing: -1.2px;
+    }
+
+
+    .hero-description {
+
+        font-size: 13px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 9px;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+        min-height: 47px;
+    }
+
+
+    /* Developer Card */
+
+    .developer-card {
+
+        border-radius: 16px;
+    }
+
+
+    .card-top {
+
+        padding: 14px 18px;
+    }
+
+
+    .card-content {
+
+        padding: 21px 16px;
+    }
+
+
+    .card-content h3 {
+
+        font-size: 20px;
+    }
+
+
+    .tech-list {
+
+        gap: 6px;
+    }
+
+
+    .tech-list span {
+
+        font-size: 9px;
+
+        padding: 6px 8px;
+    }
+
+
+    /* =====================================================
+       PROJECTS
+    ===================================================== */
+
+    .projects-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    .project-card {
+
+        border-radius: 14px;
+    }
+
+
+    .project-card img {
+
+        height: 135px;
+    }
+
+
+    .project-content {
+
+        padding: 13px;
+    }
+
+
+    .project-content h3,
+    .project-card h3 {
+
+        font-size: 15px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .project-content p,
+    .project-card p {
+
+        font-size: 10.5px;
+
+        line-height: 1.6;
+
+        -webkit-line-clamp: 2;
+
+        max-height: 3.2em;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* Technology tags */
+
+    .project-technologies,
+    .tech-stack {
+
+        gap: 5px;
+
+        margin-top: 8px;
+
+        margin-bottom: 11px;
+    }
+
+
+    .tech-tag,
+    .tech {
+
+        font-size: 8.5px;
+
+        padding: 4px 6px;
+
+        border-radius: 5px;
+    }
+
+
+    /* Equal project buttons */
+
+    .project-links {
+
+        gap: 5px;
+    }
+
+
+    .project-links a {
+
+        min-height: 36px;
+
+        height: 36px;
+
+        padding: 5px 3px;
+
+        font-size: 8.5px;
+
+        border-radius: 6px;
+    }
+}
+
+
+/* =========================================================
+   6. VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .header .container {
+
+        gap: 7px;
+    }
+
+
+    .logo {
+
+        font-size: 19px;
+    }
+
+
+    .nav-links {
+
+        gap: 11px;
+    }
+
+
+    .nav-links a {
+
+        font-size: 9px;
+    }
+
+
+    .hero {
+
+        padding-top: 90px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 31px;
+    }
+
+
+    /* Projects remain 2 columns */
+
+    .projects-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 9px;
+    }
+
+
+    .project-card img {
+
+        height: 115px;
+    }
+
+
+    .project-content {
+
+        padding: 10px;
+    }
+
+
+    .project-content h3,
+    .project-card h3 {
+
+        font-size: 13px;
+    }
+
+
+    .project-content p,
+    .project-card p {
+
+        font-size: 9px;
+
+        -webkit-line-clamp: 2;
+    }
+
+
+    .tech-tag,
+    .tech {
+
+        font-size: 7.5px;
+
+        padding: 3px 5px;
+    }
+
+
+    .project-links {
+
+        gap: 4px;
+    }
+
+
+    .project-links a {
+
+        min-height: 33px;
+
+        height: 33px;
+
+        font-size: 7.5px;
+
+        padding: 4px 2px;
+    }
+}
+
+
+/* =========================================================
+   7. BUTTON TEXT NEVER JUMPS
+========================================================= */
+
+.project-links a,
+.primary-btn,
+.secondary-btn {
+
+    line-height: 1;
+
+    vertical-align: middle;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   8. PROJECT CARD HEIGHT CONSISTENCY
+========================================================= */
+
+@media (min-width: 769px) {
+
+    .project-links {
+
+        margin-top: auto;
+    }
+
+
+    .project-content {
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .project-content p {
+
+        min-height: 54px;
+    }
+
+
+    .project-technologies,
+    .tech-stack {
+
+        min-height: 32px;
+    }
+}
