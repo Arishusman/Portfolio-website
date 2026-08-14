@@ -5034,3 +5034,137 @@ iframe {
         padding: 0 8px !important;
     }
 }
+
+/* =========================================================
+   FINAL PROJECT CARD ALIGNMENT FIX
+   LIVE DEMO + GITHUB ALWAYS SAME LEVEL
+   ========================================================= */
+
+.projects-grid {
+    align-items: stretch !important;
+}
+
+.project-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+.project-card .project-content,
+.project-card .project-card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+}
+
+/* Description area takes available space */
+.project-card .project-content p,
+.project-card .project-card-content p {
+    flex: 1 !important;
+}
+
+/* Technologies stay above buttons */
+.project-card .project-technologies,
+.project-card .tech-stack {
+    flex-shrink: 0 !important;
+}
+
+/* BUTTON ROW */
+.project-card .project-links {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    margin-top: auto !important;
+}
+
+/* BOTH BUTTONS EXACT SAME SIZE */
+.project-card .project-links a {
+    width: 100% !important;
+    height: 46px !important;
+    min-height: 46px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 10px !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+        align-items: stretch !important;
+    }
+
+    .project-card {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+    }
+
+    .project-card .project-content,
+    .project-card .project-card-content {
+        display: flex !important;
+        flex-direction: column !important;
+        flex: 1 !important;
+    }
+
+    .project-card .project-content p,
+    .project-card .project-card-content p {
+        flex: 1 !important;
+    }
+
+    .project-card .project-links {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 6px !important;
+        margin-top: auto !important;
+    }
+
+    .project-card .project-links a {
+        width: 100% !important;
+        height: 38px !important;
+        min-height: 38px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 0 4px !important;
+        font-size: 9px !important;
+        margin: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .project-card .project-links {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 4px !important;
+    }
+
+    .project-card .project-links a {
+        height: 34px !important;
+        min-height: 34px !important;
+        font-size: 8px !important;
+        padding: 0 2px !important;
+    }
+}
